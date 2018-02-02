@@ -1,0 +1,26 @@
+<p>
+  header works!
+</p>
+<input type="text" [(ngModel)]="name">
+
+<button (click)="submitData()">SUbmit</button>
+{{name}}
+
+<div *ngFor=" let name of listOfName">
+  {{name}}
+</div>
+
+<div *ngIf="name;else login">
+  ANgular class
+</div>
+<ng-template #login>
+  loginclass
+</ng-template>
+<div *ngIf="name; then signin else signOut">
+</div>
+<ng-template #signin>
+  signin
+</ng-template>
+<ng-template #signOut>
+  signout
+</ng-template>
