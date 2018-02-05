@@ -107,8 +107,6 @@ hidden
 1.ng-content-- it wont create separate div tag 
 2.ng-template-- it wil create new div tag, if else ,if then else
 3.ngTemplateOutlet -- ternary operator
-
-
 ngSwitch
 
 *ngSwitchCase
@@ -122,6 +120,5 @@ angular Routing
 ROuter, routerModule
 
 ** childRoutes
-
 
 
