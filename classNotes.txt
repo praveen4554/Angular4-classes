@@ -1,0 +1,110 @@
+Angular 2, angular 4 and angular 5
+
+
+Angular 2 over ANgular 1
+
+1. Better speed and performance 
+component based architecture
+modularizations
+http separate module
+forms separate module
+routing separates module 
+2. simple dependany injection 
+3. Benefits of ES6 and typescript 
+4. flexible routing 
+5. easy to learn
+6.mobile friendly
+
+it supports JIT compiler
+
+Angular 4 over Angular 2
+
+1. less code and optimization
+2. animation part is separated.
+3. if and else template 
+4. pipes in templates
+5. improves http search parameters 
+6. ngIF and ngFor improves 
+
+the built in compiler is JIT and we can change JIT to AOT
+compilers 
+
+JIT and AOT compiler 
+
+{{praveen | UPPERCASE}} -- praveen
+{{20 | USD}} -- 20$
+
+Angular5 over Angular 4
+by default it is AOT 
+
+npm install -g @angular/cli
+
+ng new projectName
+
+npm install -D @angular/http
+shruti
+npm install -- 
+
+npm install -D 
+Anusha
+Port
+
+style.css
+
+h2{
+    color: red;
+}
+
+component
+1. template or html
+2. styles
+3.unit testing
+4. type script file
+
+@NgModule}
+@Injectable}
+@Compoennt} Decorators 
+
+1. module
+2. app component 
+
+npm install
+
+npm install -D
+
+npm install -S express
+npm install -D node-scheduler
+
+
+() -- event binding
+[] -- property binding
+{{}} -- interpolation 
+
+if else
+if then else
+ngFor
+ngSwitch
+{{}}
+[(ngModel)]="variable" 
+ngStyle
+ngClass
+disabled
+hidden
+
+1 module called table module it will displays a table
+<table>
+<tr><th></th></tr>
+<tr>
+<td></td>
+</tr>
+</table>
+
+<table>
+<ng-template #header="listOfNames"></ng-template>
+</table>
+
+
+1.ng-content-- it wont create separate div tag 
+2.ng-template-- it wil create new div tag, if else ,if then else
+3.ngTemplateOutlet -- ternary operator
+
