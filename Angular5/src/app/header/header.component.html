@@ -24,3 +24,30 @@
 <ng-template #signOut>
   signout
 </ng-template>
+{{2+3}}
+<ul *ngFor="let person of persons;let i=index" [ngSwitch]="person.country">
+  <li *ngSwitchCase="'UK'">{{person.name}}</li>
+  <li *ngSwitchCase="'IND'">{{person.name}}</li>
+  <li *ngSwitchDefault >{{person.name}}</li>
+</ul>
+<ul *ngFor="let person of persons;let i=index">
+  <li *ngIf="person.country=='UK'" style="color:red">{{person.name}}</li>
+  <li *ngIf="person.country=='IND'" style="color:green">{{person.name}}</li>
+</ul>
+<div [ngStyle]="{'color':'red'}">Test</div>
+<ul *ngFor="let person of persons;let i=index">
+  <li [ngStyle]="{'color':person.country === 'UK' ? 'red':'green'}"> {{person.name}}
+    {{person.country}}
+  </li>
+</ul>
+<ul *ngFor="let person of persons;let i=index">
+  <li [ngClass]="person.country === 'UK' ? 'colorRed':'colorGreen'"> {{person.name}}
+    {{person.country}}
+  </li>
+</ul>
+<button [disabled]="true">Submit</button>
+<button [hidden]="true">Save</button>
+<button (click)="showAlert()">showAlert</button>
+<a routerLink="/Home">Home</a>
+<a routerLink="/Footer">Footer</a>
+<a routerLink="/logOut">logOut</a>

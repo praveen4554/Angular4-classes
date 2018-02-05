@@ -17,6 +17,19 @@ export class HeaderComponent implements OnInit {
         console.log(this.name);
         this.name=!this.name;
     }
-  
+    showAlert(){
+      alert('event binding');
+    }
+  persons = [{
+    name:'mythiri',
+    country: 'US'
+  },
+  {
+    name:'mythriis',
+    country:'IND'
+  },{
+    name:'amazon',
+    country: 'UK'
+  }]
 
 }
