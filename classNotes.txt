@@ -122,3 +122,27 @@ ROuter, routerModule
 ** childRoutes
 
 
+
+
+
+                AppComponent
+    HeaderComponent             FooterComponet
+     CHildrenCOmponent              ChildCompoennt
+
+
+                    Appmodule
+        HeaderModule        footerModule
+
+
+component life cycle
+
+constructor()
+ngOnChanges()
+ngOnInit()
+ngDoCheck()
+ngAfterContentInit()
+ngAfterContentChecked()
+ngAfterViewInit()
+ngAfterViewChecked()
+ngOnDestory()
+
