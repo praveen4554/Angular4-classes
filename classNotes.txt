@@ -146,3 +146,22 @@ ngAfterViewInit()
 ngAfterViewChecked()
 ngOnDestory()
 
+
+2 types of forms
+  Template Driven forms             Model driven forms
+  Asynchronous                          Synchronous
+  ngModel                               ReactiveForms
+  ngForm 
+  formControl                           formControl
+  more html then component                  less html and more cmponet
+
+
+{{name.dirty}}
+{{name.pristine}}
+{{name.valid}}
+{{name.invalid}}
+
+ReactiveForms
+
+reactiveFormsModule
+formGroup, formBuilder,formArray,Validators,formControl

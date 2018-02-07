@@ -13,6 +13,7 @@ const Approuting=[{path:'Home',component:HeaderComponent,
       {path:'child',component:ChildComponentComponent}
       ]},
       {path:'logOut',redirectTo:'Footer',pathMatch:'full'},
+      {path:'reactive',component:ChildComponentComponent},
       {path:'**',component:HeaderComponent}];
 
 export const routing = RouterModule.forRoot(Approuting);

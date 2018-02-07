@@ -11,5 +11,11 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
   }
+  register = {
 
+  };
+  submitForm(form:any){
+    console.log(form);
+    console.log(this.register);
+  }
 }
