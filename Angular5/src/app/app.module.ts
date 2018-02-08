@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 
 
@@ -11,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { HomeChildComponent } from './home-child/home-child.component';
 import { routing } from './class.routes';
+import { HttpServiceService } from './http-service.service';
+import { SampleDirectiveDirective } from './sample-directive.directive';
 
 
 @NgModule({
@@ -19,15 +22,17 @@ import { routing } from './class.routes';
     HeaderComponent,
     FooterComponent,
     ChildComponentComponent,
-    HomeChildComponent
+    HomeChildComponent,
+    SampleDirectiveDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     routing,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [HttpServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

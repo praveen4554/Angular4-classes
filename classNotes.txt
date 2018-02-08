@@ -165,3 +165,27 @@ ReactiveForms
 
 reactiveFormsModule
 formGroup, formBuilder,formArray,Validators,formControl
+
+
+Angular services 
+
+ng g service serviceName
+
+Directives
+constructor
+ngOnChanges
+ngOnInit
+ngDoCheck
+ngDestory
+
+ng g directive directiveName
+
+selector:''-- element '.' class '[]'attribute
+
+
+
+
+
+
+
+
