@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FormModule } from './forms.module';
 
 
 
@@ -14,6 +15,8 @@ import { HomeChildComponent } from './home-child/home-child.component';
 import { routing } from './class.routes';
 import { HttpServiceService } from './http-service.service';
 import { SampleDirectiveDirective } from './sample-directive.directive';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -23,14 +26,17 @@ import { SampleDirectiveDirective } from './sample-directive.directive';
     FooterComponent,
     ChildComponentComponent,
     HomeChildComponent,
-    SampleDirectiveDirective
+    SampleDirectiveDirective,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     routing,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    FormModule
   ],
   providers: [HttpServiceService],
   bootstrap: [AppComponent]

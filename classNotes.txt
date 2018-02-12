@@ -183,6 +183,18 @@ ng g directive directiveName
 selector:''-- element '.' class '[]'attribute
 
 
+observables and promises 
+
+
+observable can handle multiple requests  promises can handle single request 
+observables cancelabale                   promises not cancelabale
+
+eventEmitter
+Output
+
+
+
+
 
 
 

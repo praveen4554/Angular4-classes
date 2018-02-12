@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { HomeChildComponent } from './home-child/home-child.component';
 import { Router, RouterModule } from '@angular/router';
+import { ParentComponent } from './parent/parent.component';
 
 const Approuting=[{path:'Home',component:HeaderComponent,
     children:[{path:'children',component:HomeChildComponent},
@@ -13,6 +14,7 @@ const Approuting=[{path:'Home',component:HeaderComponent,
       {path:'child',component:ChildComponentComponent}
       ]},
       {path:'logOut',redirectTo:'Footer',pathMatch:'full'},
+      {path:'parent',component:ParentComponent},
       {path:'reactive',component:ChildComponentComponent},
       {path:'**',component:HeaderComponent}];
 
