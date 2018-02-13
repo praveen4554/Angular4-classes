@@ -192,6 +192,15 @@ observables cancelabale                   promises not cancelabale
 eventEmitter
 Output
 
+contentChild
+ContentChildren
+viewChild
+viewChildren
+
+1 directive pane
+1 tab compoennt pane id
+1 example compoent compnent tab
+
 
 
 

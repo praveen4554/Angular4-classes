@@ -16,5 +16,8 @@ export class ChildComponent implements OnInit {
   emitEvent(){
     this.change.emit('Angular5');
   }
+  getData(){
+    console.log('Angular5 last class');
+  }
 
 }

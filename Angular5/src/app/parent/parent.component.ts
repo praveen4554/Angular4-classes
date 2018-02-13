@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
+import { ChildComponent } from '../child/child.component';
 
 @Component({
   selector: 'app-parent',
@@ -9,17 +10,19 @@ import { HttpServiceService } from '../http-service.service';
 export class ParentComponent implements OnInit {
   fullName:string;
   firstName:string;
+  @ViewChild(ChildComponent) child:ChildComponent;
   constructor(public service:HttpServiceService) { 
     this.fullName="praveen";
     this.firstName="suraj";
   }
 
   ngOnInit() {
+    this.child.getData();
   }
 changeMethod(event){
   console.log(event);
 }
-sendData(){
+generateEvent(){
   this.service.sendData(this.fullName);
 }
 }

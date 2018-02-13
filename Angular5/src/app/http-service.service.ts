@@ -25,7 +25,7 @@ export class HttpServiceService {
         return res;
       })).toPromise();
    }
-   sendData(name:string){
+   sendData(name){
       this.Success.next(name);
    }
    readData():Observable<any>{

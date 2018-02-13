@@ -17,6 +17,9 @@ import { HttpServiceService } from './http-service.service';
 import { SampleDirectiveDirective } from './sample-directive.directive';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { PaneDirective } from './pane.directive';
+import { TabComponent } from './tab/tab.component';
+import { TableComponent } from './table/table.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { ChildComponent } from './child/child.component';
     HomeChildComponent,
     SampleDirectiveDirective,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    PaneDirective,
+    TabComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
